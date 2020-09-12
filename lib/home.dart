@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
         leading: Padding(
           padding: const EdgeInsets.only(left: 18.0),
           child: Container(
-            height: 50,
+            height: 30,
             width: 60,
             color: color1,
             child: Align(
@@ -64,6 +64,18 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 30.0),
+            child: InkWell(
+              child: Image.asset(
+                'assets/menu.png',
+                width: 30,
+              ),
+              onTap: () {},
+            ),
+          )
+        ],
       ),
     );
   }
