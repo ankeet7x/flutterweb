@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         elevation: 0,
         leading: Padding(
-          padding: const EdgeInsets.all(18.0),
+          padding: const EdgeInsets.only(left: 18.0),
           child: Container(
             height: 50,
             width: 60,
@@ -32,6 +32,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white,
         title: Row(
           children: [
+            SizedBox(
+              width: size.width * 0.3,
+            ),
             FlatButton(
               child: Text(
                 "BLOG",
