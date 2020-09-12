@@ -12,22 +12,55 @@ class _HomePageState extends State<HomePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        centerTitle: false,
+        centerTitle: true,
         elevation: 0,
-        leading: Container(
-          margin: EdgeInsets.only(left: size.width - size.width * 0.9),
-          height: 50,
-          width: 60,
-          color: color1,
-          child: Align(
-            alignment: Alignment.center,
-            child: Text(
-              "Yo",
-              style: TextStyle(color: color3),
+        leading: Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Container(
+            height: 50,
+            width: 60,
+            color: color1,
+            child: Align(
+              alignment: Alignment.center,
+              child: Text(
+                "mtv",
+                style: TextStyle(color: color3),
+              ),
             ),
           ),
         ),
         backgroundColor: Colors.white,
+        title: Row(
+          children: [
+            FlatButton(
+              child: Text(
+                "BLOG",
+                style: TextStyle(
+                  color: color2,
+                ),
+              ),
+              onPressed: () {},
+            ),
+            FlatButton(
+              child: Text(
+                "SHOP",
+                style: TextStyle(
+                  color: color2,
+                ),
+              ),
+              onPressed: () {},
+            ),
+            FlatButton(
+              child: Text(
+                "CONTACT",
+                style: TextStyle(
+                  color: color2,
+                ),
+              ),
+              onPressed: () {},
+            ),
+          ],
+        ),
       ),
     );
   }
