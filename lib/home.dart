@@ -17,7 +17,28 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         height: size.height,
         width: size.width,
-        color: Colors.blue,
+        color: Colors.white,
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 18.0),
+              child: Container(
+                height: size.height * 0.6,
+                width: size.width * 0.45,
+                color: color4,
+              ),
+            ),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Container(
+                height: size.height * 0.85,
+                width: size.width * 0.65,
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: [color1, color4])),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
