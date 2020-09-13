@@ -6,10 +6,8 @@ AppBar buildAppBar(Size size) {
     centerTitle: true,
     elevation: 0,
     leading: Padding(
-      padding: const EdgeInsets.only(left: 18.0),
+      padding: const EdgeInsets.fromLTRB(18.0, 8, 0, 5),
       child: Container(
-        height: 30,
-        width: 60,
         color: color1,
         child: Align(
           alignment: Alignment.center,
