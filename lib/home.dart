@@ -72,6 +72,27 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             // Image.asset('assets/an.jpg')
+            Positioned(
+              top: size.height * 0.13,
+              left: size.width * 0.07,
+              child: Text(
+                "Be your own",
+                style: TextStyle(
+                  color: color2,
+                  fontSize: 60,
+                ),
+              ),
+            ),
+
+            Positioned(
+              top: size.height * 0.23,
+              left: size.width * 0.15,
+              child: Text(
+                "Motivation",
+                style: TextStyle(
+                    color: color2, fontSize: 90, fontWeight: FontWeight.bold),
+              ),
+            ),
 
             Positioned(
               top: size.height * 0.83,
